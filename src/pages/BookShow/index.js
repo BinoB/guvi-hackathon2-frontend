@@ -128,7 +128,7 @@ function BookShow() {
 
   useEffect(() => {
     getData();
-  }, [getData]);
+  }, []);
   return (
     show && (
       <div>
