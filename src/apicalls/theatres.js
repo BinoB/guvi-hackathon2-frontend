@@ -4,7 +4,7 @@ import { axiosInstance } from ".";
 export const AddTheatre = async (payload) => {
   try {
     const response = await axiosInstance.post(
-      "/api/theatres/add-theatre",
+      "https://guvi-hackathon2.onrender.com/api/theatres/add-theatre",
       payload
     );
     return response.data;
@@ -16,7 +16,7 @@ export const AddTheatre = async (payload) => {
 // get all theatres
 export const GetAllTheatres = async () => {
   try {
-    const response = await axiosInstance.get("/api/theatres/get-all-theatres");
+    const response = await axiosInstance.get("https://guvi-hackathon2.onrender.com/api/theatres/get-all-theatres");
     return response.data;
   } catch (error) {
     return error.response;
@@ -27,7 +27,7 @@ export const GetAllTheatres = async () => {
 export const GetAllTheatresByOwner = async (payload) => {
   try {
     const response = await axiosInstance.post(
-      "/api/theatres/get-all-theatres-by-owner",
+      "https://guvi-hackathon2.onrender.com/api/theatres/get-all-theatres-by-owner",
       payload
     );
     return response.data;
@@ -40,7 +40,7 @@ export const GetAllTheatresByOwner = async (payload) => {
 export const UpdateTheatre = async (payload) => {
   try {
     const response = await axiosInstance.post(
-      "/api/theatres/update-theatre",
+      "https://guvi-hackathon2.onrender.com/api/theatres/update-theatre",
       payload
     );
     return response.data;
@@ -53,7 +53,7 @@ export const UpdateTheatre = async (payload) => {
 export const DeleteTheatre = async (payload) => {
   try {
     const response = await axiosInstance.post(
-      "/api/theatres/delete-theatre",
+      "https://guvi-hackathon2.onrender.com/api/theatres/delete-theatre",
       payload
     );
     return response.data;
@@ -66,7 +66,7 @@ export const DeleteTheatre = async (payload) => {
 export const AddShow = async (payload) => {
   try {
     const response = await axiosInstance.post(
-      "/api/theatres/add-show",
+      "https://guvi-hackathon2.onrender.com/api/theatres/add-show",
       payload
     );
     return response.data;
@@ -79,7 +79,7 @@ export const AddShow = async (payload) => {
 export const GetAllShowsByTheatre = async (payload) => {
   try {
     const response = await axiosInstance.post(
-      "/api/theatres/get-all-shows-by-theatre",
+      "https://guvi-hackathon2.onrender.com/api/theatres/get-all-shows-by-theatre",
       payload
     );
     return response.data;
@@ -92,7 +92,7 @@ export const GetAllShowsByTheatre = async (payload) => {
 export const DeleteShow = async (payload) => {
   try {
     const response = await axiosInstance.post(
-      "/api/theatres/delete-show",
+      "https://guvi-hackathon2.onrender.com/api/theatres/delete-show",
       payload
     );
     return response.data;
@@ -105,7 +105,7 @@ export const DeleteShow = async (payload) => {
 export const GetAllTheatresByMovie = async (payload) => {
   try {
     const response = await axiosInstance.post(
-      "/api/theatres/get-all-theatres-by-movie",
+      "https://guvi-hackathon2.onrender.com/api/theatres/get-all-theatres-by-movie",
       payload
     );
     return response.data;
@@ -119,7 +119,7 @@ export const GetAllTheatresByMovie = async (payload) => {
 export const GetShowById = async (payload) => {
   try {
     const response = await axiosInstance.post(
-      "/api/theatres/get-show-by-id",
+      "https://guvi-hackathon2.onrender.com/api/theatres/get-show-by-id",
       payload
     );
     return response.data;
